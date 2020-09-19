@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="description" content="Resume Website for Asa Rogers">
+     <meta name="keywords" content="HTML, CSS, Javascript, Python, Resume, Asa, Rogers, UCO, University of Central Oklahoma, contact, student"> 
+     <meta name="author" content="Asa Rogers">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Resume</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+     <div class="container">
+          <nav class="navbar">
+               <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+               </ul>
+          </nav>
+          <section id="home">
+               <h1>Asa Rogers</h1>
+               <p> Student, Programmer, Gymshark</p>
+          </section>
+          <section id="about">
+               <h1>About</h1>
+               <p>Hey friend! My name is Asa, but everyone calls me Ace. I'm a student at University of Central Oklahoma, Computer Science major. My hobbies include coding, exercising, and reading </p>
+          </section>
+          <section id="skills">
+               <h1>Skills</h1>
+               <ul>
+                    <li>Linux</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Javascript</li>
+               </ul>
+          </section>
+          <section id="projects">
+               <h1>Projects</h1>
+               <p>Current and Future projects</p>
+          </section>
+          <section id="contact">
+                    <ul class="social">
+                         <h2> Contacts</h2>
+                         <li class="linkedin"><a href="https://www.linkedin.com/in/asa-j-rogers-4476531b7/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                         <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100055345713936" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                         <li class="email"> <a href = "mailto:cyberasasoftware@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-lg"></i> </a> </li>
+                         <li class="github"><a href="https://github.com/asarogers" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></li>
+                         <h6>cell: 405-490-0122</h6>
+
+                         
+                    </ul>
+                    <div id="map"></div>
+          </section>
+     </div>
+
+     <script>
+          function initMap() {
+               var location = { lat: 35.653141, lng: -97.481506};
+               var map = new google.maps.Map(document.getElementById("map"), {zoom: 13,
+                    center: location});
+               var marker = new google.maps.Marker({position: location, map: map})}
+     </script>
+     <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTJfyx536yETJMP7hbza0yC2GmmgALTCc&callback=initMap">
+    </script>
+
+</body>
+</html>
